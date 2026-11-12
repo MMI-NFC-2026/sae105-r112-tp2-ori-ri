@@ -3,3 +3,7 @@
     height: 100%;
     border: 0;
 }
+
+html:has(.menu:popover-open) {
+    overflow: hidden;
+}
