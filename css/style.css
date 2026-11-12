@@ -34,3 +34,4 @@ html:has(.menu:popover-open) {
 .burger {
     cursor: pointer;
 }
+
