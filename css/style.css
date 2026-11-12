@@ -35,3 +35,9 @@ html:has(.menu:popover-open) {
     cursor: pointer;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .menu,
+    .menu .burger--close {
+        transition: none;
+    }
+}
