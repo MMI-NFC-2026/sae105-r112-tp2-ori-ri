@@ -28,7 +28,7 @@
 
 /* quand on clique sur le bouton et que l'action se passe, le burger se tournera de coté de 90 degres. Cette action se deroulera en 400ms */
 .menu:popover-open .burger--close {
-    transform: rotate(90deg);
+    transform: none;
     transition: 400ms;
 }
 
