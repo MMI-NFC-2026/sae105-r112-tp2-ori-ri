@@ -1,0 +1,51 @@
+/* le menu s'affiche sur tout l'écran */
+.menu {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    /* nom de la transition et sa vitesse*/
+    transition: 400ms allow-discrete;
+    opacity: 0;
+}
+
+/* quand on est dans le menu, opacité à 1 (il est apparu) */
+.menu:popover-open {
+    opacity: 1;
+}
+
+/* quand va aller dans le menu, opacité à 0 au depart puis 1 après (autrement dit, le menu apparait dans un fondu en un temps de 400ms) */
+@starting-style {
+    .menu:popover-open {
+        opacity: 0;
+    }
+}
+
+@starting-style {
+    .menu:popover-open .burger--close {
+        transform: none;
+    }
+}
+
+/* quand on clique sur le bouton et que l'action se passe, le burger se tournera de coté de 90 degres. Cette action se deroulera en 400ms */
+.menu:popover-open .burger--close {
+    transform: none;
+    transition: 400ms;
+}
+
+/* permet que quand on défile dans le menu, l'autre page ou on était avant ne défile pas */
+html:has(.menu:popover-open) {
+    overflow: hidden;
+}
+
+/* changer l'apparence du curseur quand on passe au dessus du burger */
+.burger {
+    cursor: pointer;
+}
+
+/* si une personne ne veut pas voir les transitions, elle peut les désactivées */
+@media (prefers-reduced-motion: reduce) {
+    .menu,
+    .menu .burger--close {
+        transition: none;
+    }
+}

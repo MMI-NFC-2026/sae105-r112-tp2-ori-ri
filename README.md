@@ -1,3 +1,10 @@
+Nom : KARMANN
+
+Prénom : Oriane
+
+Netlify : https://peaceful-kleicha-3f223a.netlify.app/
+
+
 État initial : le bouton 🍔 ne fait rien, et la <nav> s'affiche en permanence sous le bouton (en double). On cherche à mettre en place un menu avec `popover`.
 
 Pour chaque étape réalisée : faire un commit reprenant le titre.
@@ -198,3 +205,4 @@ Recherchez sur le site https://developer.mozilla.org/fr/ les pages de documentat
 
 - `popover` : https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Global_attributes/popover
 - ...
+
